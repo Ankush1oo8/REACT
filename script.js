@@ -10,9 +10,9 @@ const parent = React.createElement(
   React.createElement("div", { id: "child" }, [
     React.createElement("h1", {}, "I am Chidren Element or nested"),
     React.createElement("h2", {}, "I am Sibling to the first H1"),
-  ])
+  ]) 
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(heading);
+root.render(heading);// it will be replaced by parent 
 root.render(parent);
