@@ -43,6 +43,6 @@ const TitleComponent = () => {
 };
 
 //we can use js in jsx using {}=> this brackets
-
+//<HeadingComponent/>==={HeadingComponent()}
 //need to render functional component as element
 root.render(<TitleComponent />);
