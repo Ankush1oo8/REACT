@@ -1,21 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const heading = React.createElement(
-  "h1",
-  { id: "heading" },
-  "hello world from react"
-);
-
-const parent = React.createElement(
-  "div",
-  { id: "parent" },
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "I am Chidren Element or nested"),
-    React.createElement("h2", {}, "I am Sibling to the first H1"),
-  ]) 
-);
+//React createElement=> Object =>when we render=>it becomes html elemnt
+const heading = React.createElement("h1", { id: "heading" }, "Namaste react");
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(heading);// it will be replaced by parent 
-root.render(parent);
+//root.render(heading); //it will replace root div with given code
+
+//its hard to write this code
+//jsx=>created=>merge html and js=>not html in js=>html like syntax
+const jsxheading = <h1 id="heading">Hello jee</h1>;
+
+root.render(jsxheading);
