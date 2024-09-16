@@ -20,31 +20,29 @@ const jsxheading = <h1 className="heading">Hello jee</h1>;
 //class bassed component=>old way
 //functional component=>new way =>mostly used
 
-
 //functional component=>normal js function
-const HeadingComponent=()=>{
-    return(
-        <div className="container">
-            <h1>Hello from functional Component:Heading</h1>
-        </div>
-    )
-}
+const HeadingComponent = () => {
+  return (
+    <div className="container">
+      <h1>Hello from functional Component:Heading</h1>
+    </div>
+  );
+};
 //element in jsx
-const element=(<h1>hello I am element</h1>);
+const element = <h1>hello I am element</h1>;
 
 //component composition
-const TitleComponent=()=>{
-    return(
-        <div className="container">
-            <HeadingComponent/> 
-            {element}
-            <h1>Hello from functional Component:Title</h1>
-        </div>
-    )
-}
+const TitleComponent = () => {
+  return (
+    <div className="container">
+      <HeadingComponent />
+      {element}
+      <h1>Hello from functional Component:Title</h1>
+    </div>
+  );
+};
 
 //we can use js in jsx using {}=> this brackets
 
-
 //need to render functional component as element
-root.render(<TitleComponent/>);
+root.render(<TitleComponent />);
